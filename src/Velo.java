@@ -1,6 +1,8 @@
 
 public class Velo extends Vehicule implements DeuxRoues{
-
+	
+	public String modele;
+	
 	@Override
 	public boolean demarrer() {
 			System.out.println("Vélo démarre");
@@ -12,5 +14,14 @@ public class Velo extends Vehicule implements DeuxRoues{
 		System.out.println("Vélo arrête");
 		
 	}
+	public Velo(String modele) {
+		this.modele = modele;
+	}
+	
+	public String getModele() {
+		return this.modele;
+	}
+	
+	
 
 }
